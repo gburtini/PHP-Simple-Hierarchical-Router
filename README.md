@@ -49,7 +49,7 @@ tl;dr: When in doubt, you should assume all variables you pass in to the router 
 * If the type selected has an empty path, the path will currently begin from "/"
 * If the second parameter to map (first parameter to magic methods) is empty, the router will cowardly refuse to try to load it. 
 * If the second parameter to map contains "..", it will _navigate up the path as expected_. If this is not your desired behavior, you should whitelist. If you do not want to whitelist, the code could be modified to use `realpath` to validate the prefix.
-* The third parameter to ::map takes in a map of parameters to expand in the included file. Currently, this uses `extract(., EXTR_SKIP)` to expand the map. `EXTR_SKIP` means that any of the variables used within the map function (including $path, $load) cannot be passed. This is not a security risk (in the router, it could be in your code!) but you should use a prefix (or modify the code to support a more general extraction mechanism) for all variables passed through.
+* The third parameter to ::map takes in a map of parameters to expand in the included file. Currently, this uses `extract(., EXTR_SKIP)` to expand the map. `EXTR_SKIP` means that any of the variables used within the map function (including `$path`, `$load`) cannot be passed. This is not a security risk (in the router, it could be in your code!) but you should use a prefix (or modify the code to support a more general extraction mechanism) for all variables passed through.
 * There are more considerations. Most of them related to the path. You *should read the code before using it*. It is unlikely this code will be "ready to use" for all purposes currently.    
     
 
