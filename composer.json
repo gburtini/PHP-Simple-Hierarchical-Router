@@ -1,0 +1,24 @@
+{
+    "name": "gburtini/router",
+    "type": "library",
+    "description": "A very simple lightweight routing system capable of safe in-order fallbacks/priorities. All variables are treated as untainted. You should read the code (or at least 'Security' on the github page) before using this!",
+    "keywords": ["routing", "router", "route", "lightweight", "mapping", "file system"],
+    "homepage": "http://github.com/gburtini/PHP-Hierarchical-Router",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Giuseppe Burtini",
+            "email": "joe@truephp.com",
+            "homepage": "http://giuseppeburtini.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Route": "src"
+        }
+    }
+}
