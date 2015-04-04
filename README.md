@@ -5,11 +5,11 @@ _Fallback friendly routing tool._
 
 In general, the philosophy here is to use the filesystem as the core routing functionality. The most common architecture is broadly as follows:
 
-	* Using `mod_rewrite` or similar, route all traffic to a parser and initialization script.
-	* Parse out the intended "route" and variables. VALIDATE THE ROUTE AGAINST A WHITELIST.
-	* `Route::map` to the appropriate file (usually a 'controller' file), passing in whitelisted variables as necessary as 'parameters'.
-	* Perform controller action.
-	* `Route::map` to the appropriate template file with whitelisted variables to output the final template.
+* Using `mod_rewrite` or similar, route all traffic to a parser and initialization script.
+* Parse out the intended "route" and variables. _VALIDATE THE ROUTE AGAINST A WHITELIST._
+* `Route::map` to the appropriate file (usually a 'controller' file), passing in whitelisted variables as necessary as 'parameters'.
+* Perform controller action.
+* `Route::map` to the appropriate template file with whitelisted variables to output the final template.
 
 
 Installation
