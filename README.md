@@ -3,6 +3,8 @@ Hierarchical Router and Template Selector
 
 _Fallback friendly routing tool._
 
+You might want to check out https://github.com/chriso/klein.php before using this.
+
 In general, the philosophy here is to use the filesystem as the core routing functionality. The most common architecture is broadly as follows:
 
 * Using `mod_rewrite` or similar, route all traffic to a parser and initialization script.
