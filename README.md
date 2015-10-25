@@ -44,7 +44,7 @@ If you don't need the fallback functionality (controller then template if contro
 Security
 --------
 
-tl;dr: When in doubt, you should assume all variables you pass in to the router are untained, secure, safe. Very little validation is performed.
+tl;dr: When in doubt, you should assure all variables you pass in to the router are untained, secure, safe. Very little validation is performed.
 
 `Route::types` does no validation. Paths are not verified to not be dangerous, empty or root. 
 `Route::map` and related functions (magic methods, `Route::mapFile`) will not prevent you from including dangerous files. Specifically:
